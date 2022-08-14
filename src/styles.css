@@ -1,1 +1,15 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Sora:wght@600&family=Space+Mono:wght@700&display=swap');
+:root {
+    font-size: 62.5%;
+    /* Color styles */
+    --primary: #FFFFFF;
+}
+
+body {
+    margin: 0px;
+}
+::-webkit-scrollbar {
+    display: none;
+   /* width: 0;   Remove scrollbar space */
+    /*background: transparent;   Optional: just make scrollbar invisible */
+}

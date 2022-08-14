@@ -1,0 +1,437 @@
+.container {
+    background: url('/assets/images/background.svg');
+    /* background: url('/assets/images/background.png'); */
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+.navbar {
+    height: 10.1vh;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+}
+.navbar, .cal_day, .unlock_text, .win_chance, .how_title, .list_class, .caution p, .btn_play p {
+    color: var(--primary);
+}
+.spacer {
+    flex: 1;
+}
+.navbar img {
+    margin-left: 7.2%;
+}
+.calendar_day {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 7.2%;
+}
+.cal_day {  
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 109%;
+    margin-bottom: 4px;
+}
+.cal_remain_day {
+    font-weight: 400;
+    font-size: 1.4rem; 
+    line-height: 109%;
+    letter-spacing: -0.02em;
+    color: rgba(255, 255, 255, 0.6);
+}
+.cal_day, .cal_remain_day, .win_chance, .how_title, .list_class, .caution p, .btn_play p {
+    font-family: 'Inter';
+    font-style: normal;
+}
+p {
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+.content {
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2vh;
+}
+.bold_text {
+    font-weight: 700;
+}
+.bold_text2 {
+    font-weight: 800;
+}
+.unlock_text {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 4.86vh;
+    padding: 0% 2%;
+    line-height: 91%;
+    text-align: center;
+    letter-spacing: -0.015em;
+    animation-name: fadeIn;
+    animation-duration: 10s;
+}
+.win_chance {
+    font-weight: 400;
+    font-size: 2.04vh;
+    line-height: 111.5%;
+    text-align: center;
+    letter-spacing: -0.06em;
+    margin-top: 2.3vh;
+    animation-name: fadeIn;
+    animation-duration: 14s;
+}
+.play_div {
+    margin-top: 2.4vh;
+    padding: 2.4vh 2.7vh;
+    width: 425px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.39) -213.5%, rgba(255, 255, 255, 0) 100%);
+    box-shadow: inset 0px -1px 11px rgba(255, 255, 255, 0.17), inset 0px 2px 0px rgba(255, 255, 255, 0.24);
+    border-radius: 8px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;    
+    box-sizing: border-box;   
+    animation-name: fadeIn;
+    animation-duration: 4s;
+}
+.how_title {
+    font-weight: 700;
+    font-size: 1.6vh;
+    line-height: 160%;
+    text-align: center;
+    color: #FFFFFF;
+}
+ol {
+    padding-left: 4%;
+}
+.list_class {
+    font-weight: 400;
+    font-size: 1.4vh;
+    line-height: 160%;
+    letter-spacing: -0.02em;
+}
+.caution {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    gap: 12px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    margin-top: 1.6vh;
+}
+.caution p {
+    font-weight: 400;
+    font-size: 1.2vh;
+    line-height: 160%;
+    letter-spacing: -0.02em;
+}
+.caution img {
+    height: 24px;
+}
+.btn_play {
+    width: 225px;
+    height: 5.6vh;
+    background: #ECAB03;
+    border-radius: 4px;
+    margin-top: 4.4vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 16px;
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box;    
+    box-sizing: border-box;   
+    animation-name: fadeIn;
+    animation-duration: 7s;
+    z-index: 9;
+}
+.btn_play p {
+    font-weight: 600;
+    font-size: 1.4vh;
+    line-height: 17px;
+    text-align: center;
+    mix-blend-mode: normal;
+    width: 100%;
+}
+.btn_play img {
+    max-width: 24px;
+    max-height: 24px;
+}
+.svg_cut {
+    position: absolute;
+    overflow: hidden;
+    bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+.fan_overlay {
+    width: 100vw;
+    bottom: 0px;
+    transform-origin: 50% 100%;
+}
+.coin_pot img {
+    max-width: 425px;
+    bottom: 0px;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    animation-name: fadeIn;
+    animation-duration: 3s;
+}
+.top_stars {
+    position: absolute;
+    top: 14.3%;
+    left: 11.8%;
+}
+.top_stars img {
+    width: 89%;
+}
+.bottom_star_1 {
+    position: absolute;
+    bottom: 26.29%;
+    left: 25.97%;
+}
+.bottom_star_2 {
+    position: absolute;
+    bottom: 1.75%;
+    left: 25.93%;
+}
+.bottom_star_3 {
+    position: absolute;
+    bottom: 3.68%;
+    left: 38.72%;
+}
+.bottom_star_4 {
+    position: absolute;
+    bottom: 1.94%;
+    left: 54.77%;
+    z-index: 5;
+}
+.floating_star_1 {
+    position: absolute;
+    bottom: 5.82%;
+    left: 53.1%;
+    z-index: 95;
+}
+.floating_star_2 {
+    position: absolute;
+    bottom: 13.96%;
+    left: 45.72%;
+    z-index: 95;
+}
+.floating_star_3 {
+    position: absolute;
+    bottom: 4.73%;
+    left: 48.08%;
+    z-index: 95;
+}
+.floating_star_4 {
+    position: absolute;
+    bottom: 2.39%;
+    left: 44.58%;
+    z-index: 95;
+}
+.floating_star_5 {
+    position: absolute;
+    bottom: 23.48%;
+    left: 59.3%;
+    z-index: 95;
+}
+.floating_star_6 {
+    position: absolute;
+    bottom: 14.97%;
+    left: 37.12%;
+    z-index: 95;
+}
+.floating_star_7 {
+    position: absolute;
+    bottom: 4.48%;
+    left: 47.43%;
+    z-index: 95;
+}
+#overlay {
+    position: absolute;
+    top: 50%;
+    width: 100vw;
+    height: 50vh;
+    z-index: -99;
+}
+.web_view {
+    display: flex;
+}
+.mobile_view {
+    display: none;
+}
+.left_coin {
+    position: absolute;
+    bottom: 5%;
+    left: 30%;
+    z-index: 5;
+}
+.right_coin {
+    position: absolute;
+    bottom: 2%;
+    right: 30%;
+    z-index: 5;
+}
+.left_bounce {
+    animation-name: left_bounce;
+    animation-timing-function: linear;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+.right_bounce {
+    animation-name: rigth_bounce;
+    animation-timing-function: linear;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+.fade_out {
+    animation-name: fadeOutUp;
+    animation-timing-function: linear;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+.fade_out2 {
+    animation-name: fadeOutUp2;
+    animation-timing-function: linear;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+.rotate_effect {
+    animation-name: ckw;
+    animation-timing-function: linear;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes left_bounce {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-10vh); }
+    100% { transform: translateY(0); }
+}
+@keyframes rigth_bounce {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-7vh); }
+    100% { transform: translateY(0); }
+}
+@keyframes fadeOutUp {
+   0% {
+      opacity: 1;
+      transform: translate(0px,3vh);
+   }
+   25% {
+      opacity: 1;
+      transform: translate(2vh,-5vh);
+   }
+   50% {
+      opacity: 1;
+      transform: translate(0px,-10vh);
+   }
+   75% {
+      opacity: 1;
+      transform: translate(-2vh,-15vh);
+   }
+   100% {
+      opacity: 0;
+      transform: translate(0px,-20vh);
+   }
+}
+@keyframes fadeOutUp2 {
+   0% {
+      opacity: 1;
+      transform: translate(0px,5vh);
+   }
+   25% {
+      opacity: 1;
+      transform: translate(-2vh,-5vh);
+   }
+   50% {
+      opacity: 1;
+      transform: translate(0px,-10vh);
+   }
+   75% {
+      opacity: 1;
+      transform: translate(2vh,-15vh);
+   }
+   100% {
+      opacity: 0;
+      transform: translate(0px,-20vh);
+   }
+}
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+@keyframes ckw {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-30deg);
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    .play_div {
+        width: 335px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .play_div, .coin_pot img {
+        width: 335px;
+    }
+    .unlock_text {
+        font-size: 4rem;
+        line-height: 40.8px;
+    }
+    .win_chance {
+        font-size: 1.6rem;
+        padding: 0px 40px;
+    }
+    ol {
+        padding-left: 5%;
+    }
+    .web_view {
+        display: none;
+    }
+    .mobile_view {
+        display: flex;
+    }
+    .star_top_1 {
+        position: absolute;
+        left: 84.9%;
+        top:27.5%;
+    }
+    .star_top_2{
+        position: absolute;
+        left: 89%;
+        top: 15%;
+    }
+    .star_top_3{
+        position: absolute;
+        left: -4%;
+        top: 34%;
+    }
+    br{ display: none; }
+}
+
+@media screen and (max-width: 280px) {
+    .play_div, .coin_pot img {
+        width: 260px;
+    }
+}
+
+/* * {
+    outline: 1px solid red;
+} */
